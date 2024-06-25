@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔川村旅游网</title>
+	 <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	  <header>
+	      <div class="head" id="top">
+	          <div class="w">
+	              <div class="logo">
+	                  <!-- 优化搜索引擎logo -->
+	                  <h1><a href="index.html" title="塔川村">
+	                          <img src="img/logo1.png" alt="" class="logo_img">
+	                      </a></h1>
+	              </div>
+	              <div class="fl">
+	                  <ul class="clearfix">
+	                      <li><a href="">首页</a></li>
+	                      <li></li>
+	                      <li><a href="./民情风俗.html">民情风俗</a></li>
+	                      <li></li>
+	                      <li><a href="./主要景点.html" class="dropbtn">主要景点</a>
+						   <div class="dropdown-content">
+						        <a href="./木坑竹海.html">木坑竹海</a>
+						        <a href="#">五树参天</a>
+						        <a href="#">宏村</a>
+						        </div>
+						  </li>
+	                      <li></li>
+	                      <li><a href="#">旅游信息</a></li>
+	                  </ul>
+	              </div>
+				       <div class="search">
+				                 <form action="https://www.baidu.com/s" method="get">
+				                     <input type="text" name="q" placeholder="搜索">
+				                     <button type="submit">搜索</button>
+				                 </form>
+				             </div>
+	              <div class="login">
+	                  <ul>
+	                      <li><a href="./登录.html" style="color: #fff;">登录</a></li>
+	                      <li><a href="./注册.html" class="s_red">注册</a></li>
+	                  </ul>
+	              </div>
+				  <div id="dateTime" style="position: absolute; top: 0px; right: 10px; color: white;">
+				      <span id="date"></span>
+				      <span id="time"></span>
+					  </div>
+	      </div>
+	  </header>
+ <div id="slider">
+ 	<ul id="list">
+ 		<li><img src="img/OIP-C.jpg" alt=""></li>
+ 		<li><img src="img/OIP-C (1).jpg" alt=""></li>
+ 		<li><img src="img/OIP-C (4).jpg" alt=""></li>
+ 	</ul>
+	<div class="marquee">
+         <span>塔川村，又名塔上，隶属于黟县宏村镇。位于黟县桃花源著名旅游景点——宏村到木坑竹海景点途中，是黟县小桃源众多美丽富绕的自然村落中一个独具魅力的山间村落，有“溪绕前屋”等绝妙景观，尤其是塔川秋色，是众多画家、摄影家创作的基地。</span>
+     </div>
+	</div>
+ 
+	 <div class="image-gallery-title">
+	    民俗&景点
+	 </div>
+	 <div class="image-gallery">
+	     <div class="image-column">
+	         <img src="img/1.jpg" alt="Image 1">
+	         <div class="image-overlay">
+	             <p>亮船会</p>
+	         </div>
+	     </div>
+	     <div class="image-column">
+	         <img src="img/OIP-C（5）.jpg" alt="Image 2">
+	         <div class="image-overlay">
+	             <p>上九庙会</p>
+	         </div>
+	     </div>
+	     <div class="image-column">
+	         <img src="img/OIP-C (6).jpg" alt="Image 3">
+	         <div class="image-overlay">
+	             <p>木坑竹海</p>
+	         </div>
+	     </div>
+	 </div>
+	 <div class="image-gallery-title">
+	    特色小吃
+	 </div>
+	 <div class="box1">
+				<div class="box">
+							<img src="img/mdf.jpg" alt="毛豆腐" class="zheng">   <!-- 图像 -->
+							<div class="text fan">               <!-- 遮罩，应用text和fan两个类样式 -->
+								<h1>毛豆腐，是中国安徽省黄山市（徽州地区）的特色名菜，属于徽菜，以豆腐为主料。</h1>
+							</div>
+							</div>
+							<div class="box">
+							<img src="img/cgy.jpg" alt="臭鳜鱼" class="zheng">   <!-- 图像 -->
+							<div class="text fan">               <!-- 遮罩，应用text和fan两个类样式 -->
+								<h1>臭鳜鱼，是以鳜鱼、生姜、红辣椒为原料制作的一道菜品，属徽州菜。</h1>
+							</div>
+							</div>
+							<div class="box">
+							<img src="img/xkhsb.jpg" alt="蟹壳黄烧饼" class="zheng">   <!-- 图像 -->
+							<div class="text fan">               <!-- 遮罩，应用text和fan两个类样式 -->
+								<h1>蟹壳黄烧饼是南京的传统名小吃，属金陵小吃。烧饼形似螃蟹背壳，色如蟹黄，故名蟹壳黄。</h1>
+							</div>
+						</div>
+						</div>
+						<div>
+						<video controls="false" muted="muted" id="video1" name="media" style="width:100%; height: 100%;">
+						<source src="img/塔川村.mp4" type="video/mp4">
+						</video>
+						</div>
+	<footer id="footer">
+	            版权所有 @计科四班孙睿20220000604
+	</footer>
+ <script>
+ 	function changeColor(){
+ 	var color="red|green|blue";
+ 	color=color.split("|");
+ 	document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+ 	}
+ 	setInterval("changeColor()",200);
+ 	
+ 	
+ 	var list =  document.querySelector("#list");
+ 	var img =  list.querySelector("img");// 确保选择的是轮播图中的img元素
+ 	var uli = list.children;
+ 	var index = 0;
+	list.style.left = '0px';// 初始化left值
+ 	setInterval(move,2000);
+ 	function move(){
+ 		if(index < uli.length-1){
+ 			index++;
+ 			list.style.left = -index * img.offsetWidth+"px";
+ 			list.style.transition = 'left 1s';
+ 			}else{
+ 				index=0;
+ 				list.style.left = -index * img.offsetWidth+"px";
+ 				list.style.transition = 'left 0s';
+				list.style.left = '0px';// 重置left值为0
+ 			}
+ 	};
+ 	function updateDateTime() {
+ 	    var now = new Date();
+ 	    var date = now.toLocaleDateString(); // 获取当前日期
+ 	    var time = now.toLocaleTimeString(); // 获取当前时间
+ 	    document.getElementById('date').textContent = '日期: ' + date;
+ 	    document.getElementById('time').textContent = '时间: ' + time;
+ 	}
+ 	
+ 	// 每秒更新一次时间
+ 	setInterval(updateDateTime, 1000);
+ 	
+ 	// 初始化显示日期和时间
+ 	updateDateTime();
+ 	function updateDateTime() {
+ 	    var now = new Date();
+ 	    var date = now.toLocaleDateString(); // 获取当前日期
+ 	    var time = now.toLocaleTimeString(); // 获取当前时间
+ 	    document.getElementById('date').textContent = date;
+ 	    document.getElementById('time').textContent = time;
+ 	}
+ 	
+ 	// 每秒更新一次时间
+ 	setInterval(updateDateTime, 1000);
+ 	
+ 	// 初始化显示日期和时间
+ 	updateDateTime();	
+	
+
+ document.querySelector('.dropbtn').addEventListener('mouseover', function() {
+     document.querySelector('.dropdown-content').style.display = 'block';
+ });
+ 
+ document.querySelector('.dropdown-content').addEventListener('mouseover', function() {
+     this.style.display = 'block';
+ });
+ 
+ document.querySelector('.dropdown').addEventListener('mouseout', function(event) {
+     // 确保鼠标离开的是下拉菜单而不是触发按钮
+     if (!event.relatedTarget || !event.relatedTarget.classList.contains('dropbtn')) {
+         document.querySelector('.dropdown-content').style.display = 'none';
+     }
+ });
+
+ 
+ </script>
+</body>
+</html>

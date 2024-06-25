@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>民情风俗</title>
+	<style>
+			* {
+			    padding: 0;
+			    margin: 0;
+				list-style: none;
+			}
+			.w {
+			    width: 1440px;
+			    margin: 0 auto;padding-bottom: 50px; 
+			}
+			body {
+			    background-color: #fffae8;
+			}
+			/* head区域 */
+			.head {
+			    position: relative;
+			    z-index: 100;
+			    width: 100%;
+			    background-color: #1B4549;
+			    height: 90px;
+			    line-height: 90px;
+			    border-bottom: 1px solid #333030;
+			}
+			.head .logo {
+			    float: left;
+			    width: 59px;
+			    height: 71px;
+			    margin-left: 50px;
+			}
+			.logo_img {
+			    width: 200%;
+			    height: 200%;
+			    margin-top: -30px;
+			}
+			.head .fl {
+			    float: left;
+			    margin-left: 80px;
+			    width: 735px;
+			}
+			.fl ul li {
+			    float: left;
+			    width: 80px;
+			    height: 45px;
+			    line-height: 45px;
+			    text-align: center;
+			    font-size: 16px;
+			    margin-top: 25px;
+			}
+			.fl ul li:hover {
+			    background-color: rgba(0, 0, 0, 0.2);
+			}
+			.fl ul li a {
+			    color: #fff;
+			}
+			.fl ul li:nth-child(even) {
+			    width: 1px;
+			    height: 16px;
+			    line-height: 90px;
+			    background-color: #fff;
+			    margin: 38px 15px 0;
+			}
+			.login {
+			    float: right;
+			    width: 300px;
+			    height: 90px;
+			    line-height: 90px;
+			}
+			.login ul li {
+			    float: left;
+			    margin-left: 20px;
+			    font-size: 16px;
+			    color: #fff;
+			}
+			.s_red {
+			    color: white;
+			}
+			.logo {
+			    padding-top: 18px;
+			}
+			.search {
+							    display: inline-block; /* 确保搜索框与其他元素并排 */
+							    margin-left: -100px; /* 调整搜索框与其他元素之间的间距 */
+							}
+							
+							.search form {
+							    display: inline-block; /* 确保表单元素水平排列 */
+							}
+							.search input[type="text"] {
+							    width: 200px; /* 搜索框宽度 */
+							    height: 30px; /* 搜索框高度 */
+							    padding: 5px; /* 内边距 */
+							    border: 1px solid #ccc; /* 边框 */
+							}
+							.search button[type="submit"] {
+								 height:40px;
+							    background-color: #007BFF; /* 按钮背景颜色 */
+							    color: #fff; /* 按钮文字颜色 */
+							    border: none; /* 无边框 */
+							    padding: 5px 10px; /* 内边距 */
+							    cursor: pointer; /* 鼠标悬停时显示为手型 */
+							}
+							.search button[type="submit"]:hover {
+							    background-color: #0056b3; /* 鼠标悬停时的按钮背景颜色 */
+							}
+			     #footer {
+					    background-color: #333;
+					    color: white;
+					    padding: 20px 0;
+					    text-align: center;
+					    width: 100%;
+					}
+					.dropdown-content {
+					    display: none;
+					    position: absolute;
+					    background-color: #1b4549 ;
+					    min-width: 160px;
+					    box-shadow: 0px 8px 16px 0px rgba(27, 69, 73, 1.0);
+					    z-index: 1;
+					}
+					
+					.dropdown-content a {
+					    color: black;
+					    padding: 12px 16px;
+					    text-decoration: none;
+					    display: block;
+					}
+					
+					.dropdown-content a:hover {
+					    background-color: #1b4549;
+					}
+					
+					/* 悬停时下拉菜单显示 */
+					.dropbtn:hover  +.dropdown-content {
+					    display: block;
+					}
+		</style>
+	</head>
+	<body>
+		<header>
+		    <div class="head" id="top">
+		        <div class="w">
+		            <div class="logo">
+		                <!-- 优化搜索引擎logo -->
+		                <h1><a href="index.html" title="塔川村">
+		                        <img src="img/logo1.png" alt="" class="logo_img">
+		                    </a></h1>
+		            </div>
+		            <div class="fl">
+		                <ul class="clearfix">
+		                    <li><a href="./塔川村首页.html">首页</a></li>
+		                    <li></li>
+		                    <li><a href=" ">民情风俗</a></li>
+		                    <li></li>
+		                    <li><a href="./主要景点.html" class="dropbtn">主要景点</a>
+								   <div class="dropdown-content">
+								        <a href=" ">木坑竹海</a>
+								        <a href=" ">五树参天</a>
+								        <a href=" ">宏村</a>
+								        </div>
+								  </li>
+		                    <li></li>
+		                    <li><a href="./旅游信息.html">旅游信息</a></li>
+		                </ul>
+		            </div>
+						       <div class="search">
+						                 <form action="https://www.baidu.com/s" method="get">
+						                     <input type="text" name="q" placeholder="搜索">
+						                     <button type="submit">搜索</button>
+						                 </form>
+						             </div>
+		            <div class="login">
+		                <ul>
+		                    <li><a href="./登录.html" style="color: #fff;">登录</a></li>
+		                    <li><a href="./注册.html" class="s_red">注册</a></li>
+		                </ul>
+		            </div>
+						  <div id="dateTime" style="position: absolute; top: 0px; right: 10px; color: white;">
+						      <span id="date"></span>
+						      <span id="time"></span>
+							  </div>
+		    </div>
+		</header>
+		<div style="display: flex; justify-content: space-between;">
+		        <a href="#" target="_blank">
+		            <img src="img/1.jpg" alt="" width="400px" height="400px">
+		        </a>
+		        <a href="./上九庙会.html" target="_blank">
+		            <img src="img/OIP-C（5）.jpg" alt="" width="400px" height="400px">
+		        </a>
+		        <a href="#" target="_blank">
+		            <img src="img/tcqc.jpg" alt="" width="400px" height="400px">
+		        </a>
+		    </div>
+		<footer id="footer">
+		            版权所有 @计科四班孙睿20220000604
+		</footer>
+		<script>
+	function changeColor(){
+ 	var color="red|green|blue";
+ 	color=color.split("|");
+ 	document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+ 	}
+ 	setInterval("changeColor()",200);
+ 	
+ 	
+ 	var list =  document.querySelector("#list");
+ 	var img =  list.querySelector("img");// 确保选择的是轮播图中的img元素
+ 	var uli = list.children;
+ 	var index = 0;
+	list.style.left = '0px';// 初始化left值
+ 	setInterval(move,2000);
+ 	function move(){
+ 		if(index < uli.length-1){
+ 			index++;
+ 			list.style.left = -index * img.offsetWidth+"px";
+ 			list.style.transition = 'left 1s';
+ 			}else{
+ 				index=0;
+ 				list.style.left = -index * img.offsetWidth+"px";
+ 				list.style.transition = 'left 0s';
+				list.style.left = '0px';// 重置left值为0
+ 			}
+ 	};
+ 	function updateDateTime() {
+ 	    var now = new Date();
+ 	    var date = now.toLocaleDateString(); // 获取当前日期
+ 	    var time = now.toLocaleTimeString(); // 获取当前时间
+ 	    document.getElementById('date').textContent = '日期: ' + date;
+ 	    document.getElementById('time').textContent = '时间: ' + time;
+ 	}
+ 	
+ 	// 每秒更新一次时间
+ 	setInterval(updateDateTime, 1000);
+ 	
+ 	// 初始化显示日期和时间
+ 	updateDateTime();
+ 	function updateDateTime() {
+ 	    var now = new Date();
+ 	    var date = now.toLocaleDateString(); // 获取当前日期
+ 	    var time = now.toLocaleTimeString(); // 获取当前时间
+ 	    document.getElementById('date').textContent = date;
+ 	    document.getElementById('time').textContent = time;
+ 	}
+ 	
+ 	// 每秒更新一次时间
+ 	setInterval(updateDateTime, 1000);
+ 	
+ 	// 初始化显示日期和时间
+ 	updateDateTime();	
+	
+
+ document.querySelector('.dropbtn').addEventListener('mouseover', function() {
+     document.querySelector('.dropdown-content').style.display = 'block';
+ });
+ 
+ document.querySelector('.dropdown-content').addEventListener('mouseover', function() {
+     this.style.display = 'block';
+ });
+ 
+ document.querySelector('.dropdown').addEventListener('mouseout', function(event) {
+     // 确保鼠标离开的是下拉菜单而不是触发按钮
+     if (!event.relatedTarget || !event.relatedTarget.classList.contains('dropbtn')) {
+         document.querySelector('.dropdown-content').style.display = 'none';
+     }
+ });
+		</script>
+	</body>
+</html>
